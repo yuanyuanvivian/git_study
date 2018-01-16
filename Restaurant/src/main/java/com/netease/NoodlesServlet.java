@@ -16,6 +16,7 @@ public class NoodlesServlet extends HttpServlet {
 
         String vegetable = request.getParameter("vegetable");
         String noodles = Kitchen.makeNoodles(vegetable);
+        String noddles2 = Kitchen.makeNoodles(vegetable);
         writer.println(noodles);
     }
 }
